@@ -24,14 +24,14 @@ A criação dos objetos fica sob responsabilidades das classes de fábrica.
   Classe abstrata: metodo abstrato criar pizza. (PizzaFactory)
   Classes concretas representando as fabricas. (PizzaFactorySC, PizzaFactoryRS) 
   Classes concretas representando as pizzas de cada fabrica. (SCPizzaPeperoni, RSPizzaPeperoni)
-## Facade
+### Facade
 - É utilizado para diminuir a complexidade de um código, basicamente é uma classe concreta contendo um conjunto de outras classes concretas para facilitar o desenvolvimento, assim quem usar a classe não precisará saber 
 saber a respeito de todas as classes.
 - Estrutura:
    Classe concreta: RealizarDoacaoDestinadaONG(Double valor) - Chamara dentro do seu código as outras classes, assim o código ficará mais limpo.
    Classe concreta: EstouroOrcamentoDoacao(Double valor)
    Classe concreta: EmpresaLucroSatisfatorio
-## Strategy
+### Strategy
  - É utilizado para criar uma estratégia para dependencia da abstração.
  - Pode ser aplicado em cálculo de imposto aonde o existirá vários impostos com diversas aliquotas, contudo, o método responsável por calcular imposto receberá uma abstração e não um classe concreta, ou seja, um único metodo cálculara todos os impostos.
  - Estrutura:
